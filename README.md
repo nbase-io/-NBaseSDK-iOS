@@ -1,5 +1,5 @@
 
-## Why Adapty?
+## Why Nbase?
 
 - [On-the-fly paywalls price testing](https://docs.adapty.io/v2.0.0/docs/ab-test?utm_source=github&utm_medium=referral&utm_campaign=AdaptySDK-iOS). Test different prices, duration, offers, messages, and designs simultaneously, all without new app releases.
 - [Full customer's payment history](https://docs.adapty.io/v2.0.0/docs/profiles-crm?utm_source=github&utm_medium=referral&utm_campaign=AdaptySDK-iOS). Explore the user's payment events from the trial start to subscription cancellation or billing issues.
