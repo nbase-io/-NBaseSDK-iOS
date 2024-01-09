@@ -13,7 +13,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "NBaseSDK",
-            path: "Framework/NBaseFramework.xcframework"
+            path: "Framework/NBase.framework"
         ),
     ]
 )
