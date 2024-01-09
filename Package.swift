@@ -2,6 +2,9 @@ import PackageDescription
 
 let package = Package(
     name: "NBaseFramework",
+    platforms: [
+        .iOS(.v12)
+    ],
     products: [
         .library(
             name: "NBaseFramework",
@@ -17,6 +20,11 @@ let package = Package(
     targets: [
         .target(
             name: "NBaseFramework",
-            dependencies: ["Alamofire","Apollo","ApolloAPI","SocketIO"],
+            dependencies: [
+                .product(name: "Alamofire", package: "alamofire"),
+                .product(name: "Apollo", package: "apollo-ios"),
+                .product(name: "SocketIO", package: "socket.io-client-swift")
+            ],
+            path: "NBase.framework"
     ]
 )
