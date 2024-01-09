@@ -16,7 +16,7 @@ Nbase iOS SDK를 설치한 후, Nbase 대시보드와 연동하고 개발에 필
 Swift package 셋업을 마친 뒤, NcloudChat를 dependency로 추가하기 위해, `Package.swift`에 `dependencies` 를 추가 합니다.
 ```swift
 dependencies: [
-    .package(url: "https://github.com/nbase-io/NBaseSDK-iOS.git")
+    .package(url: "https://github.com/nbase-io/NBaseSDK-iOS")
 ]
 ```
 
