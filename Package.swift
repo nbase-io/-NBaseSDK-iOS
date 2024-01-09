@@ -17,6 +17,6 @@ let package = Package(
     targets: [
         .target(
             name: "NBaseFramework",
-            dependencies: ["Alamofire","Apollo"]),
+            dependencies: ["Alamofire","Apollo","ApolloAPI","SocketIO"],
     ]
 )
