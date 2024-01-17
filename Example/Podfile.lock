@@ -1,0 +1,16 @@
+PODS:
+  - NBase (0.1.0)
+
+DEPENDENCIES:
+  - NBase (from `../`)
+
+EXTERNAL SOURCES:
+  NBase:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NBase: 8b4a36b69ed8fc9d36c38285a1f9e9454e443b9d
+
+PODFILE CHECKSUM: 55ed139fd72c030bc6805d0b170c0ffbfe6e2c18
+
+COCOAPODS: 1.14.3

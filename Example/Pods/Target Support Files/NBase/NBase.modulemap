@@ -1,0 +1,6 @@
+framework module NBase {
+  umbrella header "NBase-umbrella.h"
+
+  export *
+  module * { export * }
+}
