@@ -1,6 +1,0 @@
-framework module Pods_NBase_Example {
-  umbrella header "Pods-NBase_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}
