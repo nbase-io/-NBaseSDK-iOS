@@ -13,6 +13,12 @@ let package = Package(
             name: "NBase",
             targets: ["NBase"]),
     ],
+    dependencies: [
+        .package(name: "Alamofire", url: "https://github.com/Alamofire/Alamofire.git", from: "5.8.1")
+        .package(name: "swift-log", url: "https://github.com/apple/swift-log.git", from: "1.5.3")
+        .package(name: "SocketIO", url: "https://github.com/socketio/socket.io-client-swift.git")
+        .package(name: "Apollo", url: "https://github.com/apollographql/apollo-ios.git")
+    ],
     targets: [
         .binaryTarget(
             name: "NBase",
