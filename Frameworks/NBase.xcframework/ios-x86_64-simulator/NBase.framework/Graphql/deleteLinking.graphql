@@ -1,0 +1,7 @@
+mutation DeleteLinking($projectId: String!, $id: ID!) {
+  deleteLinking(input: {projectId: $projectId, id: $id}) {
+    linking {
+      id
+    }
+  }
+}

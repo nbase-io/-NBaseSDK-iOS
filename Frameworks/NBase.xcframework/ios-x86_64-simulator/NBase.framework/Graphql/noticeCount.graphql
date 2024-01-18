@@ -1,0 +1,18 @@
+query NoticeCount($projectId: String!, $storeId: String!) {
+  noticeApp(projectId: $projectId, storeId: $storeId) {
+    totalCount
+    baseUrl
+    edges {
+      node {
+        id
+        image {
+          lang
+          value
+          default
+        }
+        url
+        scheme
+      }
+    }
+  }
+}

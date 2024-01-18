@@ -1,0 +1,11 @@
+framework module NBase {
+  umbrella header "NBase.h"
+  export *
+
+  module * { export * }
+}
+
+module NBase.Swift {
+  header "NBase-Swift.h"
+  requires objc
+}

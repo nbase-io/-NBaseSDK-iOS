@@ -1,0 +1,43 @@
+mutation createPurchaseV3($projectId: String!,
+                        $orderId: String!,
+                        $receipt: String!,
+                        $signature: String!,
+                        $itemId: String!,
+                        $storeId: String!,
+                        $country: String,
+                        $paymentId: String!,
+                        $currency: String!,
+                        $serverId: String,
+                        $playerId: String,
+                        $metadata: String,
+                        $options: String,
+                        $authCode: String,
+                        $level: Int,
+                        $price: Float!,
+                        $iapVersion: Int,
+                        $userdata: String) {
+  createPurchaseV3(input: {
+                            projectId: $projectId,
+                            orderId: $orderId,
+                            receipt: $receipt,
+                            signature: $signature,
+                            itemId: $itemId,
+                            storeId: $storeId,
+                            country: $country,
+                            paymentId: $paymentId,
+                            currency: $currency,
+                            serverId: $serverId,
+                            playerId: $playerId,
+                            level: $level,
+                            price: $price,
+                            authCode: $authCode,
+                            iapVersion: $iapVersion,
+                            metadata: $metadata,
+                            options: $options,
+                            userdata: $userdata
+                         }) {
+    purchase {
+      id
+    }
+  }
+}

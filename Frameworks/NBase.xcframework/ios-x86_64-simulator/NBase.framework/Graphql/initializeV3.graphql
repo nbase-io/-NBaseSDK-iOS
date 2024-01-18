@@ -1,0 +1,82 @@
+query InitializeV3($projectId: String!, $storeId: String!, $projectKey: String!) {
+  initializeV3(projectId: $projectId, storeId: $storeId, projectKey: $projectKey) {
+
+    platform
+    country
+    language
+    remote_ip
+    sandbox
+    store
+    push
+    project {
+      app_id {
+        google
+        one
+        galaxy
+      }
+      public_key {
+        google
+        one
+      }
+      ncp {
+        objectstorage_access_key
+        sens_push_service_id
+      }
+      hash_key
+      plugin{
+        url
+        member_migration
+      }
+    }
+    maintenance {
+      store {
+        google
+        one
+        galaxy
+      }
+      store_id
+      message {
+        default
+        lang
+        value
+      }
+      url
+      startedAt
+      endedAt
+    }
+    update {
+      store_id
+      version
+      version_code
+      is_force
+      project_id {
+        app_id {
+          google
+          one
+          galaxy
+        }
+      }
+    }
+    config {
+      key
+      value
+    }
+    iap
+        {
+            id
+            store_id
+            store_item_id
+            name
+            type
+        }
+    integrationConfigs
+    {
+        integration_id
+        group
+        key
+        value
+        type
+    }
+
+  }
+}

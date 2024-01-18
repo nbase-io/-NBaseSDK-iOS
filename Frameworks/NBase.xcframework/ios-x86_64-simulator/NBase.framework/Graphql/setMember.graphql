@@ -1,0 +1,20 @@
+mutation setMember($projectId: String, $adid: String, $device: String, $network: String, $version: String, $model: String,
+  $token: String, $push: Boolean, $night: Boolean, $ad: Boolean, $agree_termsofuse:Boolean, $agree_privacypolicy:Boolean, $gdpr:GDPRInput)
+{
+  setMember(input: {projectId: $projectId, adid: $adid, device: $device, network: $network, version: $version, model: $model,
+    token: $token, push: $push, night: $night, ad: $ad, agree_termsofuse:$agree_termsofuse,
+    agree_privacypolicy:$agree_privacypolicy, gdpr:$gdpr}) {
+    member {
+      id
+      push
+      night
+      ad
+      agree {
+        termsofuse
+        privacypolicy
+        termsofuseAt
+        privacypolicyAt
+      }
+    }
+  }
+}

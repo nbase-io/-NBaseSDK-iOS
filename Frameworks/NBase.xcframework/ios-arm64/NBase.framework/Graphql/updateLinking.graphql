@@ -1,0 +1,7 @@
+mutation UpdateLinking($projectId: String, $memberId: String, $username: String, $provider: String, $email: String) {
+    updateLinking(input: {projectId: $projectId, memberId: $memberId, username: $username, provider: $provider, email: $email}) {
+        linking {
+            id
+        }
+    }
+}

@@ -1,0 +1,7 @@
+mutation useCoupon($number: String!, $projectId: String!, $storeId: String, $userData: String) {
+  useCoupon(input: {number: $number, projectId: $projectId, storeId:$storeId, userData:$userData}) {
+    couponlog{
+      id
+    }
+  }
+}

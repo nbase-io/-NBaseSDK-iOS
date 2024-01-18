@@ -1,0 +1,15 @@
+mutation checkPurchaseV3($projectId: String! $productId: String! $storeId: String!, $paymentId: String, $userdata: String
+  ) {
+    checkPurchaseV3(
+      input: {
+        projectId: $projectId
+        productId: $productId
+        storeId: $storeId
+        paymentId: $paymentId
+        userdata: $userdata
+      }
+    ) {
+      status
+      code
+    }
+  }

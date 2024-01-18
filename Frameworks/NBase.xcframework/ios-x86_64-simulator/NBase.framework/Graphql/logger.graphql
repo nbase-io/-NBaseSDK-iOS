@@ -1,0 +1,7 @@
+mutation createLogging($projectId: String, $storeId: String, $level: String, $errorCode: String, $message: String, $memberId: String) {
+  createLogging(input: {projectId: $projectId, level: $level, storeId: $storeId, errorCode: $errorCode, message: $message, memberId: $memberId}) {
+    logging {
+      id
+    }
+  }
+}

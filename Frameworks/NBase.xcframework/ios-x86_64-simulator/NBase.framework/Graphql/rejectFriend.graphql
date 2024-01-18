@@ -1,0 +1,32 @@
+mutation rejectFriend(
+    $projectId: String!
+    $friendId: String!
+    $message: String
+) {
+    rejectFriend(
+        input: {
+            projectId: $projectId
+            friendId: $friendId
+            message: $message
+        }
+    ) {
+        friendship {
+            project_id
+            id
+            status
+            user_id
+            user {
+                id
+                nickname
+            }
+            friend {
+                id
+                nickname
+            }
+            friend_id
+            created_at
+            updated_at
+            requested_at
+        }
+    }
+}

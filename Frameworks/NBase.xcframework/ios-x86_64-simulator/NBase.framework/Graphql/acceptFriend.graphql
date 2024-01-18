@@ -1,0 +1,30 @@
+mutation acceptFriend(
+  $projectId: String!
+  $friendId: String!
+) {
+    acceptFriend(
+    input: {
+      projectId: $projectId
+      friendId: $friendId
+    }
+  ) {
+    friendship {
+      project_id
+        id
+        status
+        user_id
+        user {
+            id
+            nickname
+        }
+        friend {
+            id
+            nickname
+        }
+        friend_id
+        created_at
+        updated_at
+        requested_at
+    }
+  }
+}
