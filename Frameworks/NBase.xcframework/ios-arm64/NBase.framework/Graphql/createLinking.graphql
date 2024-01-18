@@ -1,7 +1,0 @@
-mutation CreateLinking($projectId: String, $memberId: String, $username: String, $password: String, $provider: String, $email: String) {
-  createLinking(input: {projectId: $projectId, memberId: $memberId, username: $username, password: $password, provider: $provider, email: $email}) {
-    linking {
-      id
-    }
-  }
-}

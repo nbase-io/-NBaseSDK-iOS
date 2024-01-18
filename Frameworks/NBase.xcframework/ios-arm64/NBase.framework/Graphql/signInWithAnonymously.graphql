@@ -1,8 +1,0 @@
-mutation signInWithAnonymously($projectId: String!, $storeId: String!, $deviceId: String!, $options: String) {
-  signInWithAnonymously(input: {projectId: $projectId, storeId: $storeId, deviceId: $deviceId, options: $options}) {
-    token
-    member {
-      id
-    }
-  }
-}

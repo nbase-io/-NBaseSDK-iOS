@@ -22,7 +22,7 @@ pod 'NBase'
 
 ## Author
 
-6132218, osoriz@naver.com
+dev@nbase.io
 
 ## License
 

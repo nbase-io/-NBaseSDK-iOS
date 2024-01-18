@@ -1,5 +1,0 @@
- query member {
-    member {
-        id
-    }
-  }

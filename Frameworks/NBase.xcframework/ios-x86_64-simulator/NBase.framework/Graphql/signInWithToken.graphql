@@ -1,8 +1,0 @@
-mutation signInWithToken($projectId: String!, $storeId: String!, $provider: String!, $providerId: String!, $providerToken: String!, $options: String) {
-  signInWithToken(input: {projectId: $projectId, storeId: $storeId, provider: $provider, providerId: $providerId, providerToken: $providerToken, options: $options}) {
-    token
-     member {
-      id
-    }
-  }
-}
