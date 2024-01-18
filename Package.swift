@@ -5,24 +5,18 @@ import PackageDescription
 
 let package = Package(
     name: "NBase",
-   platforms: [.iOS(.v11)],
-        .iOS(.v12)
-    ],
     products: [
         .library(
             name: "NBase",
             targets: ["NBase"]),
     ],
     dependencies: [
-        .package(name: "Alamofire", url: "https://github.com/Alamofire/Alamofire.git", from: "5.8.1")
-        .package(name: "swift-log", url: "https://github.com/apple/swift-log.git", from: "1.5.3")
-        .package(name: "SocketIO", url: "https://github.com/socketio/socket.io-client-swift.git")
-        .package(name: "Apollo", url: "https://github.com/apollographql/apollo-ios.git")
+        .package(name: "Appwrite", url: "https://github.com/appwrite/sdk-for-swift", from: "0.1.0")
     ],
     targets: [
         .binaryTarget(
             name: "NBase",
-            url: "https://github.com/nbase-io/NBaseSDK-iOS/releases/download/sdk/NBase.zip"
+            url: "https://github.com/nbase-io/NBaseSDK-iOS/releases/download/1.0.1/NBase.zip"
         ),
     ]
 )
