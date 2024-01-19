@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage     = 'https://www.nbase.io'
   s.license      = { :type => 'Commercial', :file => 'NBase/LICENSE' }
   s.authors      = {
-    'NBase' => 'contact@nbase.io'
+    'NBase' => 'contact@nbasecorp.com'
   }
   s.source       = { :http => "https://github.com/nbase-io/NBaseSDK-iOS/releases/download/1.0.4/NBase.zip" }
   s.requires_arc = true
@@ -14,5 +14,4 @@ Pod::Spec.new do |s|
   s.documentation_url = 'https://docs.nbase.io'
   s.ios.vendored_frameworks = 'NBase/NBase.xcframework'
   s.ios.frameworks = ['UIKit', 'CFNetwork', 'Security', 'Foundation', 'MobileCoreServices', 'SystemConfiguration', 'CoreFoundation']
-  # s.ios.library   = 'icucore'
 end
