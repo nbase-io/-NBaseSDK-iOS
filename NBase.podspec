@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'NBase'
-  s.version      = "1.0.4"
+  s.version      = "1.0.10"
   s.summary      = 'NBase iOS Framework'
   s.description  = 'Accelerate development Streamline operation'
   s.homepage     = 'https://www.nbase.io'
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.authors      = {
     'NBase' => 'contact@nbasecorp.com'
   }
-  s.source       = { :http => "https://github.com/nbase-io/NBaseSDK-iOS/releases/download/1.0.4/NBase.zip" }
+  s.source       = { :http => "https://github.com/nbase-io/NBaseSDK-iOS/releases/download/1.0.10/NBase.zip" }
   s.requires_arc = true
   s.platform = :ios, '11.0'
   s.documentation_url = 'https://docs.nbase.io'
